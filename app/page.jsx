@@ -1,15 +1,18 @@
-import { ContactSection } from "./components/ContactSection";
+import { FooterSection } from "./components/FooterSection";
 import { LandingSection } from "./components/LandingSection";
-import { ProjectSection } from "./components/ProjectsSection";
-import { SkillsSection } from "./components/SkillsSection";
+import { NavBar } from "./components/NavBar";
+import { ProjectSection } from "./components/ProjectSection";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col justify-between gap-20 px-6">
+    <main className="w-full flex flex-col justify-between text-white gap-10 pb-10">
+      <div>
+        <NavBar />
+        <hr />
+      </div>
       <LandingSection />
-      <SkillsSection />
       <ProjectSection />
-      <ContactSection />
+      <FooterSection />
     </main>
   );
 }
