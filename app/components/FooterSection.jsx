@@ -11,23 +11,23 @@ export const FooterSection = () => {
   const links = [
     {
       icon: <FontAwesomeIcon icon={faInstagram} />,
-      link: "h",
+      link: "instagram.com/oddly.isaac",
     },
     {
       icon: <FontAwesomeIcon icon={faGithub} />,
-      link: "h",
+      link: "Github.com/vaden89",
     },
     {
       icon: <FontAwesomeIcon icon={faTwitter} />,
-      link: "h",
+      link: "x.com/vadenisisaac",
     },
     {
       icon: <FontAwesomeIcon icon={faSteam} />,
-      link: "h",
+      link: "steamcommunity.com/profiles/76561199047836026/",
     },
     {
       icon: <FontAwesomeIcon icon={faLinkedin} />,
-      link: "h",
+      link: "linkedin.com/in/isaac-shosanya-418154235/",
     },
   ];
 
@@ -40,7 +40,7 @@ export const FooterSection = () => {
               <Link
                 key={index}
                 href={item.link}
-                className="w-9 p-1.5 aspect-square flex items-center justify-center bg-[#09090b] rounded-lg"
+                className="w-9 p-1.5 aspect-square flex items-center justify-center bg-[#09090b] rounded-lg text-white"
               >
                 {item.icon}
               </Link>
@@ -48,7 +48,7 @@ export const FooterSection = () => {
           })}
         </div>
         <hr className="w-full" />
-        <span className="pt-2 font-thin">© 2024 vadenisIsaac</span>
+        <span className="pt-2 font-thin text-white">© 2024 vadenisIsaac</span>
       </div>
     </section>
   );

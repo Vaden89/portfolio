@@ -37,7 +37,7 @@ export const NavBar = () => {
                     rx="2"
                     ry="2"
                     stroke="#ffffff"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                     stroke-width="2"
                     width="18"
                     x="3"
@@ -46,7 +46,7 @@ export const NavBar = () => {
                   <line
                     fill="none"
                     stroke="#ffffff"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                     stroke-width="2"
                     x1="9"
                     x2="9"
@@ -59,7 +59,7 @@ export const NavBar = () => {
           </g>
         </svg>
       </div>
-      <span className="border-b-2 text-2xl text-white">LOGO</span>
+      <Image src={"/logo.PNG"} width={50} height={50} alt="" className="w-9" />
     </nav>
   );
 };
