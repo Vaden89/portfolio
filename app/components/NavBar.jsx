@@ -1,65 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const NavBar = () => {
   return (
     <nav className="p-6 flex items-center justify-between w-full">
-      <div>
-        <svg
-          width="32px"
-          height="32px"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#ffffff"
-          stroke="#ffffff"
-        >
-          <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-
-          <g id="SVGRepo_iconCarrier">
-            {" "}
-            <title />{" "}
-            <g id="Complete">
-              {" "}
-              <g id="sidebar-left">
-                {" "}
-                <g>
-                  {" "}
-                  <rect
-                    data-name="Square"
-                    fill="none"
-                    height="18"
-                    id="Square-2"
-                    rx="2"
-                    ry="2"
-                    stroke="#ffffff"
-                    strokeMiterlimit="10"
-                    stroke-width="2"
-                    width="18"
-                    x="3"
-                    y="3"
-                  />{" "}
-                  <line
-                    fill="none"
-                    stroke="#ffffff"
-                    strokeMiterlimit="10"
-                    stroke-width="2"
-                    x1="9"
-                    x2="9"
-                    y1="21"
-                    y2="3"
-                  />{" "}
-                </g>{" "}
-              </g>{" "}
-            </g>{" "}
-          </g>
-        </svg>
-      </div>
       <Image src={"/logo.PNG"} width={50} height={50} alt="" className="w-9" />
+      <ul className="flex items-center gap-6 text-lg font-semibold">
+        <Link href={"#footer"}>Contact me </Link>
+        <a
+          href="/IsaacShosanya's-CV.pdf"
+          download="IsaacShosanya's-CV.pdf"
+          className="p-2 bg-white text-black rounded-lg text-bold hover:scale-95"
+        >
+          Download CV
+        </a>
+      </ul>
     </nav>
   );
 };

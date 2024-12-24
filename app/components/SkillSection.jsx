@@ -26,7 +26,10 @@ export const SkillSection = () => {
     },
   ];
   return (
-    <div className="w-full flex flex-col items-center justify-center px-6 gap-4">
+    <div
+      id="skills"
+      className="w-full flex flex-col items-center justify-center px-6 gap-4"
+    >
       <h2 className="w-full lg:text-lg lg:font-semibold">SKILLS</h2>
       <div className="w-full flex items-center lg:justify-center  gap-2 overflow-auto noscroll">
         {data.map((item, index) => {

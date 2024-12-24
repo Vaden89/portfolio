@@ -48,7 +48,9 @@ export const FooterSection = () => {
           })}
         </div>
         <hr className="w-full" />
-        <span className="pt-2 font-thin text-white">© 2024 vadenisIsaac</span>
+        <span id="footer" className="pt-2 font-thin text-white">
+          © 2024 vadenisIsaac
+        </span>
       </div>
     </section>
   );
