@@ -1,9 +1,11 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { NavBar } from "./components/NavBar";
+import { Chakra_Petch } from "next/font/google";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 
-const inter = Inter({ subsets: ["latin"] });
+const chakra_petch = Chakra_Petch({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`max-w-[1440px] w-full h-full mx-auto ${chakra_petch.className}`}
+      >
         <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>
