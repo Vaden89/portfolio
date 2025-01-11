@@ -1,7 +1,6 @@
 import { ProjectDisplayCard } from "./ProjectDisplayCard";
 
 export const ProjectSection = () => {
-  const data = [];
   return (
     <section className="w-full h-full px-6">
       <h1 className="text-lg font-semibold">PROJECTS</h1>

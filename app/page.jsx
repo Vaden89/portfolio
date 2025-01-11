@@ -1,17 +1,19 @@
 import { FooterSection } from "./components/FooterSection";
 import { LandingSection } from "./components/LandingSection";
+import { MyServices } from "./components/MyServices";
 import { NavBar } from "./components/NavBar";
 import { ProjectSection } from "./components/ProjectSection";
 import { SkillSection } from "./components/SkillSection";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col justify-between text-white gap-10 pb-10">
+    <main className="w-full flex flex-col justify-between text-white gap-12 pb-10">
       <div>
         <NavBar />
         <hr />
       </div>
       <LandingSection />
+      <MyServices />
       <ProjectSection />
       <SkillSection />
       <FooterSection />
