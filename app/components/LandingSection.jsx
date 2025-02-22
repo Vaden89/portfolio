@@ -59,7 +59,7 @@ export const LandingSection = () => {
           className="flex flex-col gap-3 text-sm text-gray-400 leading-6 opacity-70"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2.5, duration: 1.5 }}
+          transition={{ delay: 1.5, duration: 1 }}
         >
           <p>
             I&apos;m a passionate web developer who loves bringing designs to
@@ -74,13 +74,18 @@ export const LandingSection = () => {
               blockchain technology in shaping the future of the web.
             </span>
           </p>
-          <p>
+          <p className="hidden sm:flex">
             I create user-centered products that address real-world challenges.
             I prioritize seamless experiences, accessibility for all users, and
             high-performance solutions.
           </p>
         </motion.div>
-        <div className="flex items-center text-center gap-4 text-white">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 1 }}
+          className="flex items-center text-center gap-4 text-white"
+        >
           <span className="h-2 w-2 rounded-full bg-[#6200ea] glow-button"></span>
           <span>
             Listening to{" "}
@@ -92,7 +97,7 @@ export const LandingSection = () => {
               Asake
             </Link>
           </span>
-        </div>
+        </motion.div>
       </div>
       <div></div>
     </section>

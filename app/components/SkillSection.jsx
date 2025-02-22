@@ -5,26 +5,47 @@ import Image from "next/image";
 export const SkillSection = () => {
   const data = [
     {
-      name: "nextjs",
-      logo: "/nextjs.svg",
+      name: "reactjs",
+      logo: "/icons/react-js.svg",
     },
     {
-      name: "javascript",
-      logo: "/js.svg",
+      name: "nextjs",
+      logo: "/icons/nextjs.svg",
     },
     {
       name: "TypeScript",
-      logo: "/ts.svg",
+      logo: "/icons/ts.svg",
     },
     {
       name: "tailwind",
-      logo: "/tailwind.png",
+      logo: "/icons/tailwind.png",
+    },
+    {
+      name: "expressjs",
+      logo: "/icons/expressjs.svg",
+    },
+    {
+      name: "mongodb",
+      logo: "/icons/mongo-db.svg",
+    },
+    {
+      name: "javascript",
+      logo: "/icons/js.svg",
     },
     {
       name: "Vitejs",
-      logo: "/Vite.js.svg",
+      logo: "/icons/Vite.js.svg",
+    },
+    {
+      name: "git",
+      logo: "/icons/git.svg",
+    },
+    {
+      name: "aws",
+      logo: "/icons/aws.svg",
     },
   ];
+
   return (
     <div
       id="skills"
@@ -48,12 +69,6 @@ export const SkillSection = () => {
             </div>
           );
         })}
-        <div className="p-3 bg-[#121212] rounded-xl mr-2">
-          <FontAwesomeIcon icon={faReact} className="w-8 lg:w-10" />
-        </div>
-        <div className="p-3 bg-[#121212] rounded-xl mr-2">
-          <FontAwesomeIcon icon={faGitAlt} className="w-8 lg:w-10" />
-        </div>
       </div>
     </div>
   );

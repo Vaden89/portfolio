@@ -3,24 +3,33 @@ import { ServicesCard } from "./ServicesCard";
 export const MyServices = () => {
   const services = [
     {
-      header: "WEB DEVELOPMENT",
-      desc: "I build beautiful websites with React, NextJS, TailwindCSS, Typescript, and JavaScript. I also develop backend API's with Node/ExpressJS.",
+      header: "Frontend Development",
+      desc: "Building user interfaces using HTML, CSS, and JavaScript frameworks like React, NextJs.",
     },
     {
-      header: "API INTEGRATIONS",
-      desc: "Integrating backend services and APIs to the frontend securely to fetch and display data in real time.",
+      header: "Backend Development",
+      desc: "Creating server-side logic, APIs, and database interactions using Node.js, Express, NestJS",
+    },
+
+    {
+      header: "DevOps & Deployment",
+      desc: "Setting up CI/CD pipelines, managing servers, and deploying applications using platforms like Vercel, AWS, or Docker.",
     },
     {
-      header: "CONTINUOUS LEARNING",
-      desc: "Staying updated with the latest frontend technologies, trends, and best practices to deliver modern and innovative solutions.",
+      header: "API Development",
+      desc: "Building and consuming RESTful and GraphQL APIs for seamless communication between frontend and backend.",
     },
     {
-      header: "RESPONSIVE DESIGN",
-      desc: "Building websites and applications that work seamlessly on various devices and screen sizes, from desktop to smartphones.",
+      header: "Testing & Debugging",
+      desc: "Ensuring application reliability through unit, integration, and end-to-end testing with Jest, Cypress, or Vitetest.",
     },
     {
-      header: "Testing & Quality Assurance",
-      desc: "I conduct thorough testing (unit tests, integration tests, etc.) to ensure the quality and reliability of my work.",
+      header: "Performance Optimization",
+      desc: "Improving application performance through lazy loading, caching, and efficient database queries.",
+    },
+    {
+      header: "Version Control & Collaboration",
+      desc: "Using Git and GitHub for version control, code reviews, and team collaboration.",
     },
   ];
 
@@ -30,7 +39,7 @@ export const MyServices = () => {
       <span className="text-sm text-gray-400">
         Here is what I can do for you as a developer
       </span>
-      <div className="w-full grid sm:grid-cols-3 gap-4 grid-rows-2">
+      <div className="w-full grid sm:grid-cols-3 gap-4 grid-rows-1">
         {services.map((item, index) => {
           return (
             <ServicesCard key={index} desc={item.desc} header={item.header} />

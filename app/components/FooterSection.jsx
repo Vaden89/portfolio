@@ -11,29 +11,29 @@ export const FooterSection = () => {
   const links = [
     {
       icon: <FontAwesomeIcon icon={faInstagram} />,
-      link: "instagram.com/oddly.isaac",
+      link: "https://instagram.com/oddly.isaac",
     },
     {
       icon: <FontAwesomeIcon icon={faGithub} />,
-      link: "Github.com/vaden89",
+      link: "https://Github.com/vaden89",
     },
     {
       icon: <FontAwesomeIcon icon={faTwitter} />,
-      link: "x.com/vadenisisaac",
+      link: "https://x.com/vadenisisaac",
     },
     {
       icon: <FontAwesomeIcon icon={faSteam} />,
-      link: "steamcommunity.com/profiles/76561199047836026/",
+      link: "https://steamcommunity.com/profiles/76561199047836026/",
     },
     {
       icon: <FontAwesomeIcon icon={faLinkedin} />,
-      link: "linkedin.com/in/isaac-shosanya-418154235/",
+      link: "https://linkedin.com/in/isaac-shosanya-418154235/",
     },
   ];
 
   return (
     <section className="w-full flex items-center justify-center px-6">
-      <div className="w-11/12 h-32 bg-[#121212] rounded-xl flex flex-col items-center justify-center">
+      <div className="w-11/12 h-32 bg-[#0C121C] rounded-xl flex flex-col items-center justify-center">
         <div className="p-4 flex w-full items-center justify-center gap-2 ">
           {links.map((item, index) => {
             return (
@@ -49,7 +49,7 @@ export const FooterSection = () => {
         </div>
         <hr className="w-full" />
         <span id="footer" className="pt-2  text-white">
-          © 2024 vadenisIsaac
+          © 2025 vadenisIsaac
         </span>
       </div>
     </section>

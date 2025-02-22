@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Chakra_Petch } from "next/font/google";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import { NavBar } from "./components/NavBar";
 
 const chakra_petch = Chakra_Petch({
   subsets: ["latin"],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={`max-w-[1440px] w-full h-full mx-auto ${chakra_petch.className}`}
       >
+        <NavBar />
         <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>
