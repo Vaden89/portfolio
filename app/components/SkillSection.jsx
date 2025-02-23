@@ -56,7 +56,7 @@ export const SkillSection = () => {
         {data.map((item, index) => {
           return (
             <div
-              className="flex items-center min-w-14 p-3 bg-[#121212] rounded-xl"
+              className="flex items-center min-w-14 p-3 bg-[#0D1826] rounded-xl"
               key={index}
             >
               <Image
