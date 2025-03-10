@@ -11,7 +11,7 @@ export const NavBar = () => {
         <Link href={"#footer"}>Contact me </Link>
         <a
           href="/IsaacShosanya's-CV.pdf"
-          download="IsaacShosanya's-CV.pdf"
+          download="IsaacShosanya.pdf"
           className="p-1 px-2 sm:p-2 text-white bg-[#0D1826]  rounded-lg text-bold hover:scale-95 shadow-lg"
         >
           Download CV
