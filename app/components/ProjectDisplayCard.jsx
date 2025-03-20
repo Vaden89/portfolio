@@ -14,7 +14,7 @@ export const ProjectDisplayCard = ({ data }) => {
         delay: 0.2,
       }}
       viewport={{ once: true }}
-      className="w-full h-[60vh] 2xl:h-[50vh] bg-[#0C121C] flex flex-col justify-between p-4 rounded-xl hover:cursor-pointer"
+      className="w-full h-[65vh] 2xl:h-[50vh] bg-[#0C121C] flex flex-col justify-between p-4 rounded-xl hover:cursor-pointer"
     >
       <div className="w-full h-full gap-4 flex flex-col">
         <h2 className="text-white font-bold text-lg">{data.header}</h2>
@@ -26,7 +26,7 @@ export const ProjectDisplayCard = ({ data }) => {
           className="w-full h-[42%] rounded-xl"
         />
         <p className=" text-sm font-semibold text-[#777]">{data.body}</p>
-        <div className="flex flex-wrap items-center gap-4">
+        <div className="flex flex-wrap items-center gap-2">
           {data.stack.map((item, index) => {
             return (
               <span

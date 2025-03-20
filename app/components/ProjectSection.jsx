@@ -18,6 +18,23 @@ export const ProjectSection = () => {
       githubUrl: "",
       liveLink: "https://telex.im",
     },
+    {
+      header: "Deal Snap",
+      body: "Deal Snap is a web application I developed to help users find the best shopping deals by comparing prices across multiple offers. ",
+      stack: [
+        "nextjs",
+        "javascript",
+        "nodejs",
+        "expressjs",
+        "antd",
+        "stripe",
+        "tailwindcss",
+        "mongodb",
+      ],
+      imageUrl: "/project/deal-snap.png",
+      githubUrl: "",
+      liveLink: "https://deal-snap.vercel.app/",
+    },
   ];
   return (
     <section className="w-full h-full px-6">
