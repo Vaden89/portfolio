@@ -6,7 +6,7 @@ import { SkillSection } from "./components/SkillSection";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col justify-between text-white gap-12 pb-10 sm:px-20">
+    <main className="w-full flex flex-col justify-between text-white gap-10 pb-10 sm:px-20">
       <LandingSection />
       <MyServices />
       <ProjectSection />

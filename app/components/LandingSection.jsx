@@ -8,8 +8,8 @@ export const LandingSection = () => {
   const words = headingText.split(" ");
 
   return (
-    <section className="w-full sm:h-[90vh] px-6 py-4 flex sm:justify-center flex-col gap-6">
-      <div className="sm:w-2/3 flex flex-col gap-6">
+    <section className="w-full h-full sm:h-[90vh] px-6 py-4 flex sm:justify-center sm:mt-10 sm:flex-row flex-col gap-6">
+      <div className="sm:w-3/5 flex flex-col gap-6">
         <motion.div
           className="text-3xl lg:text-5xl xl:text-6xl font-bold text-white"
           initial="hidden"
@@ -56,7 +56,7 @@ export const LandingSection = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          className="flex flex-col gap-3 text-sm text-gray-400 leading-6 opacity-70"
+          className="flex flex-col gap-3  text-gray-300 leading-6 opacity-70"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -74,11 +74,11 @@ export const LandingSection = () => {
               blockchain technology in shaping the future of the web.
             </span>
           </p>
-          <p className="hidden sm:flex">
+          {/* <p className="hidden sm:flex">
             I create user-centered products that address real-world challenges.
             I prioritize seamless experiences, accessibility for all users, and
             high-performance solutions.
-          </p>
+          </p> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -99,7 +99,21 @@ export const LandingSection = () => {
           </span>
         </motion.div>
       </div>
-      <div></div>
+      <div className="w-full h-[40vh]  sm:w-2/5 sm:h-full relative sm:mt-10">
+        <motion.div
+          initial={{ x: -100, y: 80, opacity: 0 }}
+          animate={{ x: 0, y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="w-full h-full sm:h-2/3 landing-image absolute z-10"
+        />
+
+        <motion.div
+          initial={{ x: 100, y: -80, opacity: 0 }}
+          animate={{ x: 0, y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          className="w-full h-full sm:h-2/3 border-4 border-blue-400 absolute sm:-right-12 -right-5 -bottom-5 sm:-top-12"
+        />
+      </div>
     </section>
   );
 };

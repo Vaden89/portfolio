@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import { ServicesCard } from "./ServicesCard";
 
 export const MyServices = () => {
@@ -10,7 +12,6 @@ export const MyServices = () => {
       header: "Backend Development",
       desc: "Creating server-side logic, APIs, and database interactions using Node.js, Express, NestJS",
     },
-
     {
       header: "DevOps & Deployment",
       desc: "Setting up CI/CD pipelines, managing servers, and deploying applications using platforms like Vercel, AWS, or Docker.",
@@ -39,13 +40,24 @@ export const MyServices = () => {
       <span className="text-sm text-gray-400">
         Here is what I can do for you as a developer
       </span>
-      <div className="w-full grid sm:grid-cols-3 gap-4 grid-rows-1">
-        {services.map((item, index) => {
-          return (
-            <ServicesCard key={index} desc={item.desc} header={item.header} />
-          );
-        })}
-      </div>
+      <motion.div
+        className="w-full grid sm:grid-cols-3 gap-4 grid-rows-1"
+        initial="hidden"
+        animate="show"
+        variants={{
+          hidden: {},
+          show: {
+            transition: {
+              delayChildren: 0.5,
+              staggerChildren: 0.3,
+            },
+          },
+        }}
+      >
+        {services.map((item, index) => (
+          <ServicesCard key={index} desc={item.desc} header={item.header} />
+        ))}
+      </motion.div>
     </section>
   );
 };

@@ -10,6 +10,14 @@ body {
   background-color: #0c1115;
 }
 
+.landing-image {
+  background-image: url("/landing-image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
 /* No scroll bar */
 .noscroll {
   scrollbar-width: none; /* Firefox */
