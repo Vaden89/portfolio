@@ -10,7 +10,7 @@ export const NavBar = () => {
       <ul className="flex items-center gap-6 font-semibold text-xs sm:text-base">
         <Link href={"#footer"}>Contact me </Link>
         <a
-          href="/IsaacShosanya's-CV.pdf"
+          href="/isaacshosanya.pdf"
           download="IsaacShosanya.pdf"
           className="p-1 px-2 sm:p-2 text-white bg-[#0D1826]  rounded-lg text-bold hover:scale-95 shadow-lg"
         >

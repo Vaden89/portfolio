@@ -14,7 +14,7 @@ export const ProjectDisplayCard = ({ data }) => {
         delay: 0.2,
       }}
       viewport={{ once: true }}
-      className="w-full h-[50vh] sm:h-[65vh] 2xl:h-[50vh] bg-[#0C121C] flex flex-col justify-between p-4 rounded-xl hover:cursor-pointer"
+      className="w-full h-[50vh] sm:h-[55vh] 2xl:h-[50vh] bg-[#0C121C] flex flex-col justify-between p-4 rounded-xl hover:cursor-pointer"
     >
       <div className="w-full h-full gap-4 flex flex-col">
         <h2 className="text-white font-bold text-lg">{data.header}</h2>
