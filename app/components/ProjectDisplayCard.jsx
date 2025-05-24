@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 export const ProjectDisplayCard = ({ data }) => {
   return (
@@ -14,16 +14,43 @@ export const ProjectDisplayCard = ({ data }) => {
         delay: 0.2,
       }}
       viewport={{ once: true }}
-      className="w-full h-[50vh] sm:h-[55vh] 2xl:h-[50vh] bg-[#0C121C] flex flex-col justify-between p-4 rounded-xl hover:cursor-pointer"
+      className="w-full min-h-[450px] h-full sm:h-[450px] border-primary border-[0.5px] flex flex-col justify-between p-4 rounded-md hover:cursor-pointer "
     >
       <div className="w-full h-full gap-4 flex flex-col">
-        <h2 className="text-white font-bold text-lg">{data.header}</h2>
+        <div className="w-full flex justify-between items-center">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-white font-bold text-lg">{data.header}</h2>
+            {data.inDevelopment && (
+              <span className="text-xs font-semibold text-yellow-300">
+                Under development
+              </span>
+            )}
+          </div>
+          <div className="flex items-center gap-4">
+            {data.liveLink && (
+              <Link
+                href={data.liveLink}
+                className="font-semibold text-primary flex items-center w-fit hover:text-secondary transition-colors ease-in duration-200"
+              >
+                <ExternalLink />
+              </Link>
+            )}
+            {data.githubUrl && (
+              <Link
+                href={data.liveLink}
+                className="font-semibold text-primary flex items-center w-fit hover:text-secondary transition-colors ease-in duration-200"
+              >
+                <Github />
+              </Link>
+            )}
+          </div>
+        </div>
         <Image
           src={data.imageUrl}
           width={720}
           height={720}
           alt=""
-          className="w-full h-[42%] rounded-xl"
+          className="w-full h-[50%] rounded"
         />
         <p className=" text-sm font-semibold text-[#777]">{data.body}</p>
         <div className="flex flex-wrap items-center gap-2">
@@ -38,22 +65,6 @@ export const ProjectDisplayCard = ({ data }) => {
             );
           })}
         </div>
-      </div>
-      <div className="flex items-center justify-between">
-        <Link
-          href={data.liveLink}
-          className="font-semibold text-[#3F5B74] flex items-center hover:scale-105 w-fit"
-        >
-          Preview <ArrowUpRight />
-        </Link>
-
-        {data.githubUrl ? (
-          <Link href={data.githubUrl}>
-            <Github />
-          </Link>
-        ) : (
-          <span></span>
-        )}
       </div>
     </motion.div>
   );

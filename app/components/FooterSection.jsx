@@ -33,7 +33,7 @@ export const FooterSection = () => {
 
   return (
     <section className="w-full flex items-center justify-center px-6">
-      <div className="w-11/12 h-32 bg-[#0C121C] rounded-xl flex flex-col items-center justify-center">
+      <div className="w-11/12 h-32 border-primary border rounded-xl flex flex-col items-center justify-center">
         <div className="p-4 flex w-full items-center justify-center gap-2 ">
           {links.map((item, index) => {
             return (

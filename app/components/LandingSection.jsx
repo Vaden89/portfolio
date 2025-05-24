@@ -8,8 +8,8 @@ export const LandingSection = () => {
   const words = headingText.split(" ");
 
   return (
-    <section className="w-full h-full sm:h-[90vh] px-6 py-4 flex sm:justify-center sm:mt-10 sm:flex-row flex-col gap-6">
-      <div className="sm:w-3/5 flex flex-col gap-6">
+    <section className="w-full h-[50vh] lg:h-[80vh] 2xl:h-[90vh] px-6 py-4 flex justify-center sm:mt-10 sm:flex-row flex-col items-center gap-6 sm:pb-16 2xl:pb-28 ">
+      <div className="lg:w-3/5 flex flex-col gap-6">
         <motion.div
           className="text-3xl lg:text-5xl xl:text-6xl font-bold text-white"
           initial="hidden"
@@ -62,33 +62,21 @@ export const LandingSection = () => {
           transition={{ delay: 1.5, duration: 1 }}
         >
           <p>
-            I&apos;m a passionate web developer who loves bringing designs to
-            life with a solid foundation in HTML, CSS, and JavaScript. I utilize
-            modern frameworks like React and Next.js to craft visually stunning,
-            user-friendly, and responsive websites that effectively convey
-            complex ideas.{" "}
-            <span className="hidden sm:flex">
-              {" "}
-              I&apos;m also exploring the potential of Rust for high-performance
-              web development and am intrigued by the possibilities of
-              blockchain technology in shaping the future of the web.
-            </span>
+            <span className="text-[#F29559]">Building interfaces</span>.
+            Transforming designs and ideas into interactive products.{" "}
+            <span className="italic font-light">Meticulously</span> building
+            systems that are scalable, user-friendly, and performance-driven.
           </p>
-          {/* <p className="hidden sm:flex">
-            I create user-centered products that address real-world challenges.
-            I prioritize seamless experiences, accessibility for all users, and
-            high-performance solutions.
-          </p> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
-          className="flex items-center text-center gap-4 text-white"
+          className="w-full flex items-center text-center gap-4 text-white"
         >
           <span className="h-2 w-2 rounded-full bg-[#6200ea] glow-button"></span>
-          <span>
-            Listening to{" "}
+          <span className="text-sm">
+            Probably listening to{" "}
             <Link
               href={"https://open.spotify.com/artist/3a1tBryiczPAZpgoZN9Rzg"}
               target="_blank"
@@ -99,19 +87,19 @@ export const LandingSection = () => {
           </span>
         </motion.div>
       </div>
-      <div className="w-full h-[40vh]  sm:w-2/5 sm:h-full relative sm:mt-10">
+      <div className="w-full h-full sm:w-2/5 relative hidden lg:flex justify-center items-center sm:mt-10">
         <motion.div
           initial={{ x: -100, y: 80, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-full h-full sm:h-2/3 landing-image absolute z-10"
+          className="w-full h-[400px]  landing-image absolute z-10 "
         />
 
         <motion.div
           initial={{ x: 100, y: -80, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-          className="w-full h-full sm:h-2/3 border-4 border-blue-400 absolute sm:-right-12 -right-5 -bottom-5 sm:-top-12"
+          className="w-full h-[400px] border-4 border-primary absolute mb-20 ml-20"
         />
       </div>
     </section>

@@ -2,6 +2,7 @@ import "./globals.css";
 import { Chakra_Petch } from "next/font/google";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { NavBar } from "./components/NavBar";
+import { SmoothScrolling } from "./components/SmoothScrolling";
 
 const chakra_petch = Chakra_Petch({
   subsets: ["latin"],
@@ -17,10 +18,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`max-w-[1440px] w-full h-full mx-auto ${chakra_petch.className}`}
+        className={`max-w-[1440px] w-full h-full mx-auto scrollbar ${chakra_petch.className}`}
       >
+        <SmoothScrolling>
+
         <NavBar />
         <AntdRegistry>{children}</AntdRegistry>
+        </SmoothScrolling>
       </body>
     </html>
   );

@@ -41,7 +41,7 @@ export const MyServices = () => {
         Here is what I can do for you as a developer
       </span>
       <motion.div
-        className="w-full grid sm:grid-cols-3 gap-4 grid-rows-1"
+        className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 grid-rows-1"
         initial="hidden"
         animate="show"
         variants={{
