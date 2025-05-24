@@ -80,9 +80,12 @@ const MobileMenu = ({ handleMenu, isMenuOpen, lenis }) => {
                 </Link>
               </div>
               <a
+                target="_blank"
                 href="/isaacshosanya.pdf"
+                rel="noopener noreferrer"
                 download="isaacshosanya.pdf"
-                className="text-center flex items-center justify-center w-full h-10 text-black bg-secondary gap-2"
+                locale={false}
+                className="text-center flex items-center justify-center w-full px-5 h-10 text-black bg-secondary gap-2"
               >
                 Resume <FileDown />
               </a>
@@ -122,14 +125,16 @@ const DesktopMenu = ({ lenis }) => {
       >
         Contact me
       </Link>
-      <motion.a
-        whileHover={{ scale: 1.05 }}
+      <a
+        target="_blank"
         href="/isaacshosanya.pdf"
+        rel="noopener noreferrer"
         download="isaacshosanya.pdf"
+        locale={false}
         className="text-center flex items-center justify-center w-fit px-5 h-10 text-black bg-secondary gap-2"
       >
         Resume <FileDown />
-      </motion.a>
+      </a>
     </ul>
   );
 };
