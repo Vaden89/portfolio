@@ -80,7 +80,7 @@ const MobileMenu = ({ handleMenu, isMenuOpen, lenis }) => {
                 </Link>
               </div>
               <a
-                href="https://docs.google.com/document/d/1TBi-0RiUB7yCpExI7I0iDZvU1YNBWDm0oyFiYJf24Bk/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1MIeJ5nHX4nDK8a685rbdD1bh_VHsPr5B/view?usp=sharing"
                 className="text-center flex items-center justify-center w-full px-5 h-10 text-black bg-secondary gap-2"
               >
                 Resume <FileDown />
@@ -123,7 +123,7 @@ const DesktopMenu = ({ lenis }) => {
       </Link>
       <a
         target="_blank"
-        href="https://docs.google.com/document/d/1TBi-0RiUB7yCpExI7I0iDZvU1YNBWDm0oyFiYJf24Bk/edit?usp=sharing"
+        href="https://drive.google.com/file/d/1MIeJ5nHX4nDK8a685rbdD1bh_VHsPr5B/view?usp=sharing"
         className="text-center flex items-center justify-center w-fit px-5 h-10 text-black bg-secondary gap-2"
       >
         Resume <FileDown />
