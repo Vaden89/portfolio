@@ -80,11 +80,7 @@ const MobileMenu = ({ handleMenu, isMenuOpen, lenis }) => {
                 </Link>
               </div>
               <a
-                target="_blank"
-                href="/isaacshosanya.pdf"
-                rel="noopener noreferrer"
-                download="isaacshosanya.pdf"
-                locale={false}
+                href="https://docs.google.com/document/d/1TBi-0RiUB7yCpExI7I0iDZvU1YNBWDm0oyFiYJf24Bk/edit?usp=sharing"
                 className="text-center flex items-center justify-center w-full px-5 h-10 text-black bg-secondary gap-2"
               >
                 Resume <FileDown />
@@ -127,10 +123,7 @@ const DesktopMenu = ({ lenis }) => {
       </Link>
       <a
         target="_blank"
-        href="/isaacshosanya.pdf"
-        rel="noopener noreferrer"
-        download="isaacshosanya.pdf"
-        locale={false}
+        href="https://docs.google.com/document/d/1TBi-0RiUB7yCpExI7I0iDZvU1YNBWDm0oyFiYJf24Bk/edit?usp=sharing"
         className="text-center flex items-center justify-center w-fit px-5 h-10 text-black bg-secondary gap-2"
       >
         Resume <FileDown />

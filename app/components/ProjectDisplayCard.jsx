@@ -18,8 +18,10 @@ export const ProjectDisplayCard = ({ data }) => {
     >
       <div className="w-full h-full gap-4 flex flex-col">
         <div className="w-full flex justify-between items-center">
-          <div className="flex flex-col gap-1">
-            <h2 className="text-white font-bold text-lg">{data.header}</h2>
+          <div className="flex flex-col gap-1 sm:gap-0">
+            <h2 className="text-white font-bold text-lg m-0 p-0">
+              {data.header}
+            </h2>
             {data.inDevelopment && (
               <span className="text-xs font-semibold text-yellow-300">
                 Under development
